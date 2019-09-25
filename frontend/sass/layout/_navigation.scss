@@ -1,0 +1,15 @@
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    height: 17rem;
+    display: flex;
+    .logo-box {
+        width: 9rem;
+    }
+    &__nav {
+        display: flex;
+    }
+}
