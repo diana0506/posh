@@ -6,23 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://kit.fontawesome.com/45638df98b.js" crossorigin="anonymous"></script>
+
     <title>Posh</title>
 </head>
 
 <body>
 
-    <div class="navigation">
+    <div class="navigation row">
         <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
         <label for="navi-toogle" class="navigation__button">
                     <span class="navigation__icon">&nbsp;</span>
         </label>
 
         <div class="navigation__background">&nbsp;</div>
-        <div class="header__top">
-            dfgdfg
+        <div class="navigation__top">
+            <ul class="contact">
+                <li>
+                    <a href="tel:">
+                        <i class="fas fa-phone-alt"></i> (0723) 333 333
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-map-marker-alt"></i> Piata Unirii
+                    </a>
+                </li>
+            </ul>
+            <ul class="socials">
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
         </div>
         <div class="logo-box">
-            <img src="resources/logo__black.svg" alt="logo" class="logo">
+            <img src="resources/logo__white.svg" alt="logo" class="logo">
         </div>
 
         <nav class="navigation__nav">
@@ -30,15 +66,15 @@
                 <li class="navigation__item">
                     <a href="#" class="navigation__link"><span>01</span>Acasa</a></li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span></span>Studio</a></li>
+                    <a href="#" class="navigation__link"><span>02</span>Studio</a></li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link"><span>03</span>Angajari</a></li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link"><span>04</span>Despre noi</a></li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>04</span>Intrebari</a></li>
+                    <a href="#" class="navigation__link"><span>05</span>Intrebari</a></li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>05</span>Contact</a></li>
+                    <a href="#" class="navigation__link"><span>06</span>Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -54,8 +90,10 @@
                          </span>
                 </h1>
                 <div class="header__text-box__actions">
-                    <a href="#" class="btn btn-secondary">Afla mai multe</a>
-                    <a href="#" class="btn btn-primary">Contacteaza-ne</a>
+                    <a href="#" class="btn btn--secondary btn--animated">Afla mai multe</a>
+                    <a href="#" class="btn btn--primary btn--icon btn--animated">
+                        <i class="fas fa-envelope"></i> Contacteaza-ne
+                    </a>
                 </div>
             </div>
 
@@ -65,42 +103,46 @@
 
     <main>
         <section class="section-about">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
+            <div class="u-center-text u-margin-bottom-big row">
+                <h2 class="heading-secondary u-margin-bottom-big">
                     Ce iti oferim?
                 </h2>
-                <p class="heading-secondary--main ">Ai peste 18 ani? Esti atragatoare, prietenoasa si deschisa? Doresti sa ai o slujba distractiva din care sa faci bani? Daca raspunsul tau este "DA " atunci merita sa citesti mai departe..
-                </p>
+                <h3 class="heading-tertiary u-margin-bottom-small">Ai peste 18 ani? Esti atragatoare, prietenoasa si deschisa? Doresti sa ai o slujba distractiva din care sa faci bani?
+                </h3>
+                <h3 class="heading-tertiary">Daca raspunsul tau este "DA " atunci merita sa citesti mai departe..</h3>   
             </div>
-
-
 
             <div class="composition-section__about row">
                 <div class="about">
                     <ul class="about__list">
                         <li class="about__item">
+                            <img src="resources/icons/location.svg" alt="">
                             <span>Locatie ultra centrala</span></li>
                         <li class="about__item">
-                            <span></span>Discretie</li>
+                            <img src="resources/icons/mask.svg" alt="">
+                            <span>Discretie</span></li>
                         <li class="about__item">
+                            <img src="resources/icons/watch.svg" alt="">
                             <span>Program flexibil</span></li>
                         <li class="about__item">
+                            <img src="resources/icons/money.svg" alt="">
                             <span>Comisioane generoase</span></li>
                         <li class="about__item">
+                            <img src="resources/icons/porche.svg" alt="">
                             <span>Transport zilnic</span></li>
                     </ul>
                 </div>
 
-                <div class="about-details">
-                    <figure>
+                <div class="about-details row">
+                    <figure class=" u-margin-top-big">
                         <img src="resources/images/happy-girl-in-the-grass-28859-2560x1600.jpg" alt="image" class="composition-section__about__image">
 
                     </figure>
-                    <div class="abour-details__content">
-                        <p class="heading-secondary">Castiga bani in timp ce te distrezi</p>
-                        <p>Activitatea de videochat te provoaca sa iti folosesti abilitatile de comunicare cu una sau mai multe persoane din afara tarii,prin intermediul unui calculator si al unei camare video.
-                        </p>
-                        <a class="btn btn-tertiary"><span>AFLA MAI MULTE</span></a>
+                    <div class="about-details__content">
+                        <p class="heading-secondary u-margin-top-big u-margin-bottom-big">Castiga bani in timp ce te distrezi</p>
+                        <h3 class="heading-tertiary u-margin-bottom-big">Activitatea de videochat te provoaca sa iti folosesti abilitatile de comunicare cu una sau mai multe persoane din afara tarii,prin intermediul unui calculator si al unei camare video.
+                        </h3>
+                        <a class="btn btn--primary btn--animated"><span>AFLA MAI MULTE</span></a>
                     </div>
                 </div>
 
@@ -112,7 +154,7 @@
         <section class="section-join-us">
             <div class="composition-section__join-us">
                 <figure>
-                    <img src="resources/images/section__4.png" alt="image" class="composition-section__join-us__image">
+                    <!-- <img src="resources/images/section__4.png" alt="image" class="composition-section__join-us__image"> -->
 
                 </figure>
                 <p class="text-section">Vrei sa fii model?</p>
@@ -133,7 +175,7 @@
                 </p>
             </div>
             <div class="composition-section__frequent-questions">
-                <img src="resources/images/video.png">
+                <!-- <img src="resources/images/video.png"> -->
                 <a href="#" class="btn btn-primary"><span>AFLA MAI MULTE</span></a>
             </div>
 
